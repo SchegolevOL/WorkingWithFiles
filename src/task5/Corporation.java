@@ -6,6 +6,7 @@ public class Corporation {
     private ArrayList<Employee>employees;
 
     public Corporation() {
+        this.employees = new ArrayList<>();
     }
 
     public ArrayList<Employee> getEmployees() {
