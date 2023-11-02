@@ -1,0 +1,10 @@
+Пользователь с помощью клавиатуры вводит путь к файлу и массив целых чисел.
+Необходимо сохранить исходный массив в первой строке файла, четные значения
+из массива во второй строке файла, нечетные в третьей строке файла,
+перевернутый массив в четвертой строке файла.
+
+
+The user enters the path to the file and an array of integers using the keyboard.
+It is necessary to save the original array in the first line of the file,
+even values from the array in the second line of the file, odd values in
+the third line of the file, an inverted array in the fourth line of the file.
