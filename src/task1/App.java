@@ -13,8 +13,9 @@ public class App {
         ArrayList<String> str2 = new ArrayList<>();
 
         Scanner in = new Scanner(System.in);
-        System.out.print("Enter: ");
+        System.out.print("Enter path 1: ");
         String path1 = in.nextLine();
+        System.out.print("Enter path 2: ");
         String path2 = in.nextLine();
 
 
