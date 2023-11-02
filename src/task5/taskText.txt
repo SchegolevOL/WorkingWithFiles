@@ -1,0 +1,29 @@
+Напишите информационную систему "Корпорация". Программа должна обеспечивать:
+ - ввод данных;
+ - редактирования данных;
+ - редактирование данных сотрудников корпорации;
+ - удаление сотрудника корпорации;
+ - поиск сотрудников корпорации по фамилии;
+ - вывод информации во всех сотрудниках указанного возраста или фамилия которых
+ начинается на указанную букву;
+Организовать возможность сохранения найденной информации файл.
+Также весь список сотрудников корпорации сохраняется файл (при выходе из программы
+автоматически в процессе использования программы по команде пользователя).
+При старте программы происходит загрузка списка сотрудников корпорации из
+указанного пользователем файла.
+
+
+Write the information system "Corporation". The program should provide:
+- data entry;
+- data editing;
+- editing corporate employee data;
+- removal of a corporation employee;
+- search for corporation employees by last name;
+- output of information in all employees of the specified age or whose last name
+begins with the specified letter;
+Organize the possibility of saving the found information to a file.
+Also, the entire list of employees of the corporation is saved as a file
+(when exiting the program automatically during the use of the program at
+the user's command).
+When the program starts, the list of employees of the corporation is loaded
+from the file specified by the user.
