@@ -33,7 +33,7 @@ public class App {
             throw new RuntimeException(e);
         }
 
-        try (BufferedReader br = new BufferedReader(new FileReader("src/task1/text1.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(path1))) {
             String s;
 
             while ((s = br.readLine()) != null) {
@@ -45,7 +45,7 @@ public class App {
             System.out.println(ex.getMessage());
         }
         System.out.println(str1);
-        try (BufferedReader br = new BufferedReader(new FileReader("src/task1/text2.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(path2))) {
             String s;
 
             while ((s = br.readLine()) != null) {
@@ -72,7 +72,7 @@ public class App {
             }
         }
 
-
+//   src/task1/text1.txt
     }
 
 

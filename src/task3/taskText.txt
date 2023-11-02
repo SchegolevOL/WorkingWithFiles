@@ -1,0 +1,26 @@
+В файле на разных строках находятся элементы массива целых.
+Первая строка содержит элементы первого массива вторая второго
+и так далее.
+Например:
+
+1 23 43 9
+6 33 77 88
+
+Необходимо загрузить данные из файла в разные массивы, показать
+каждый массив на экран, показать максимум и минимум в каждом массиве,
+сумму элементов каждого массива, а также нужно отобразить максимум
+и минимум среди всех элементов ,также общую сумму всех элементов.
+
+
+The file contains elements of an array of integers on different lines.
+The first line contains elements of the first array, the second of
+the second, and so on. For example:
+
+1 23 43 9
+6 33 77 88
+
+It is necessary to load data from the file into different arrays,
+show each array on the screen, show the maximum and minimum in each array,
+the sum of the elements of each array, and also need to display
+the maximum and minimum among all elements, as well as the total sum
+of all elements.

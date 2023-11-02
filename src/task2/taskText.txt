@@ -1,0 +1,10 @@
+Пользовательское с помощью клавиатуры вводит путь к файлу.
+Программа должна найти длину самой длинной строки.
+После работы программы на экране отображается полученное
+число сама строка.
+
+
+The user enters the path to the file using the keyboard.
+The program must find the length of the longest string.
+After the program is running, the received number and
+the string itself are displayed on the screen.
