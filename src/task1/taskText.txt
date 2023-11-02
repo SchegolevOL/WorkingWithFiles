@@ -1,0 +1,8 @@
+Пользователь вводит с клавиатуры пути к двум текстовым файлом .
+Программа должна проверить соответствует ли сроки, если нет,
+то вывести не совпадающую строку из каждого файла.
+
+The user enters the paths to two text files from the keyboard .
+The program should check whether the timing matches, if not,
+then output a non-matching line from each file.
+
