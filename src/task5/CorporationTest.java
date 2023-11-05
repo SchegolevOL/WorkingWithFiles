@@ -45,7 +45,15 @@ class CorporationTest {
     void searchFirstEmployeeByNameEqualFirstName() {
         Corporation corporation = FakeDate.date();
         String firstName = "Petrov";
-        Employee employeeTest = corporation.searchFirstEmployeeByName(firstName, 0, (s, l, a) -> s.getFirstName().equals(l));
+        Employee employeeTest = corporation.searchFirstEmployeeByName(firstName, (s, l, a) -> s.getFirstName().equals(l));
+        Assert.assertEquals(employeeTest.getFirstName(), firstName);
+    }
+
+    @Test
+    void searchFirstEmployeeByNameEqualFirstNameAgeIs23() {
+        Corporation corporation = FakeDate.date();
+        String firstName = "Petrov";
+        Employee employeeTest = corporation.searchFirstEmployeeByName(firstName, 23, (s, l, a) -> s.getFirstName().equals(l));
         Assert.assertEquals(employeeTest.getFirstName(), firstName);
     }
 
@@ -53,7 +61,7 @@ class CorporationTest {
     void searchFirstEmployeeByNameEqualLastName() {
         Corporation corporation = FakeDate.date();
         String lastName = "Petr";
-        Employee employeeTest = corporation.searchFirstEmployeeByName(lastName, 0, (s, l, a) -> s.getLastName().equals(l));
+        Employee employeeTest = corporation.searchFirstEmployeeByName(lastName, (s, l, a) -> s.getLastName().equals(l));
         Assert.assertEquals(employeeTest.getLastName(), lastName);
     }
 
@@ -61,7 +69,7 @@ class CorporationTest {
     void searchFirstEmployeeByNameEqualPatronymic() {
         Corporation corporation = FakeDate.date();
         String patronymic = "Petrovich";
-        Employee employeeTest = corporation.searchFirstEmployeeByName(patronymic, 0, (s, l, a) -> s.getPatronymic().equals(l));
+        Employee employeeTest = corporation.searchFirstEmployeeByName(patronymic, (s, l, a) -> s.getPatronymic().equals(l));
         Assert.assertEquals(employeeTest.getPatronymic(), patronymic);
     }
 
@@ -73,7 +81,7 @@ class CorporationTest {
         ArrayList<Employee> employeesTest = new ArrayList<>();
         employeesTest.add(FakeDate.date().getEmployees().get(1));
         employeesTest.add(FakeDate.date().getEmployees().get(3));
-        ArrayList<Employee> result = corporation.searchAllEmployeeByName(firstName, 0, (s, l, a) -> s.getFirstName().equals(l));
+        ArrayList<Employee> result = corporation.searchAllEmployeeByName(firstName, (s, l, a) -> s.getFirstName().equals(l));
         Assert.assertEquals(result.size(), employeesTest.size());
         for (int i = 0; i < result.size(); i++) {
             Assert.assertEquals(employeesTest.get(i).getFirstName(), result.get(i).getFirstName());
@@ -89,7 +97,7 @@ class CorporationTest {
         ArrayList<Employee> employeesTest = new ArrayList<>();
         employeesTest.add(FakeDate.date().getEmployees().get(1));
         employeesTest.add(FakeDate.date().getEmployees().get(3));
-        ArrayList<Employee> result = corporation.searchAllEmployeeByName(lastName, 0, (s, l, a) -> s.getLastName().equals(l));
+        ArrayList<Employee> result = corporation.searchAllEmployeeByName(lastName, (s, l, a) -> s.getLastName().equals(l));
         Assert.assertEquals(result.size(), employeesTest.size());
         for (int i = 0; i < result.size(); i++) {
             Assert.assertEquals(employeesTest.get(i).getLastName(), result.get(i).getLastName());
@@ -105,7 +113,7 @@ class CorporationTest {
         ArrayList<Employee> employeesTest = new ArrayList<>();
         employeesTest.add(FakeDate.date().getEmployees().get(1));
         employeesTest.add(FakeDate.date().getEmployees().get(3));
-        ArrayList<Employee> result = corporation.searchAllEmployeeByName(patronymic, 0, (s, l, a) -> s.getPatronymic().equals(l));
+        ArrayList<Employee> result = corporation.searchAllEmployeeByName(patronymic, (s, l, a) -> s.getPatronymic().equals(l));
         Assert.assertEquals(result.size(), employeesTest.size());
         for (int i = 0; i < result.size(); i++) {
             Assert.assertEquals(employeesTest.get(i).getPatronymic(), result.get(i).getPatronymic());
@@ -121,7 +129,7 @@ class CorporationTest {
         ArrayList<Employee> employeesTest = new ArrayList<>();
         employeesTest.add(FakeDate.date().getEmployees().get(1));
         employeesTest.add(FakeDate.date().getEmployees().get(3));
-        ArrayList<Employee> result = corporation.searchAllEmployeeByName(firstName, 0, (s, l, a) -> s.getFirstName().startsWith(l));
+        ArrayList<Employee> result = corporation.searchAllEmployeeByName(firstName, (s, l, a) -> s.getFirstName().startsWith(l));
         Assert.assertEquals(result.size(), employeesTest.size());
         for (int i = 0; i < result.size(); i++) {
             Assert.assertEquals(employeesTest.get(i).getFirstName(), result.get(i).getFirstName());
@@ -137,7 +145,7 @@ class CorporationTest {
         ArrayList<Employee> employeesTest = new ArrayList<>();
         employeesTest.add(FakeDate.date().getEmployees().get(1));
         employeesTest.add(FakeDate.date().getEmployees().get(3));
-        ArrayList<Employee> result = corporation.searchAllEmployeeByName(lastName, 0, (s, l, a) -> s.getLastName().startsWith(l));
+        ArrayList<Employee> result = corporation.searchAllEmployeeByName(lastName, (s, l, a) -> s.getLastName().startsWith(l));
         Assert.assertEquals(result.size(), employeesTest.size());
         for (int i = 0; i < result.size(); i++) {
             Assert.assertEquals(employeesTest.get(i).getLastName(), result.get(i).getLastName());
@@ -153,7 +161,7 @@ class CorporationTest {
         ArrayList<Employee> employeesTest = new ArrayList<>();
         employeesTest.add(FakeDate.date().getEmployees().get(1));
         employeesTest.add(FakeDate.date().getEmployees().get(3));
-        ArrayList<Employee> result = corporation.searchAllEmployeeByName(patronymic, 0, (s, l, a) -> s.getPatronymic().startsWith(l));
+        ArrayList<Employee> result = corporation.searchAllEmployeeByName(patronymic, (s, l, a) -> s.getPatronymic().startsWith(l));
         Assert.assertEquals(result.size(), employeesTest.size());
         for (int i = 0; i < result.size(); i++) {
             Assert.assertEquals(employeesTest.get(i).getPatronymic(), result.get(i).getPatronymic());
@@ -174,5 +182,6 @@ class CorporationTest {
         }
 
     }
+
 
 }

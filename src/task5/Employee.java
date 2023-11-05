@@ -1,6 +1,8 @@
 package task5;
 
-public class Employee {
+import java.io.Serializable;
+
+public class Employee implements Serializable {
     private String lastName;
     private String firstName;
     private String patronymic;

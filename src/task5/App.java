@@ -1,27 +1,37 @@
 package task5;
 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.util.ArrayList;
+
 public class App {
     public static void main(String[] args) {
-        Employee employee1 = new Employee();
-        employee1.setFirstName("aaaa");
-        employee1.setLastName("bbbb");
-        employee1.setPatronymic("ssss");
-        employee1.setAge(50);
-        Employee employee2 = new Employee();
-        employee2.setFirstName("aaadfga");
-        employee2.setLastName("bbfgbb");
-        employee2.setPatronymic("sdfgsss");
-        employee2.setAge(23);
-        Employee employee3 = new Employee();
-        employee3.setFirstName("re");
-        employee3.setLastName("erer");
-        employee3.setPatronymic("sserersdss");
-        employee3.setAge(34);
         Corporation corporation = new Corporation();
-        corporation.addEmployee(employee1);
-        corporation.addEmployee(employee2);
-        corporation.addEmployee(employee3);
-        corporation.printEmployees();
+        /*corporation = FakeDate.date();
+        try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("src/task5/corporation.dat")))
+        {
+
+            oos.writeObject(corporation);
+            System.out.println("File has been written");
+        }
+        catch(Exception ex){
+
+            System.out.println(ex.getMessage());
+        }*/
+
+        try(ObjectInputStream ois = new ObjectInputStream(new FileInputStream("src/task5/corporation.dat")))
+        {
+
+            corporation=(Corporation) ois.readObject();
+
+        }
+        catch(Exception ex){
+
+            System.out.println(ex.getMessage());
+        }
+        System.out.println(corporation.getEmployees());
 
     }
 }
