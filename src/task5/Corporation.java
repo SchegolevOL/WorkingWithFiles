@@ -2,6 +2,9 @@ package task5;
 
 import java.util.ArrayList;
 
+interface SearchEmployee{
+    public boolean search(Employee employee, String name, int age);
+}
 public class Corporation {
     private ArrayList<Employee>employees;
 
@@ -24,6 +27,28 @@ public class Corporation {
              this.employees) {
             System.out.println(employee.toString());;
         }
+    }
+    public Employee searchFirstEmployeeByName(String name, int age, SearchEmployee s){
+
+        for (Employee item:
+                employees) {
+            if (s.search(item, name, age))
+            {
+               return item;
+            }
+        }
+        return null;
+    }
+    public ArrayList <Employee> searchAllEmployeeByName(String name, int age, SearchEmployee s){
+        ArrayList<Employee> searsEmployees = new ArrayList<>();
+        for (Employee item:
+             employees) {
+            if (s.search(item, name, age))
+            {
+                searsEmployees.add(item);
+            }
+        }
+        return searsEmployees;
     }
 
 }

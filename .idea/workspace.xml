@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75063e02-0b5f-43a5-9ad9-291839646131" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/task5/CorporationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/task5/FunctionsCorporation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task5/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task5/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkingWithFiles.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WorkingWithFiles.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task5/Corporation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task5/Corporation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,12 +19,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -34,10 +41,17 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
     "last_opened_file_path": "C:/Java Project/WorkingWithFiles",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -46,6 +60,104 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="task5" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CorporationTest">
+    <configuration name="CorporationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WorkingWithFiles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="task5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="task5" />
+      <option name="MAIN_CLASS_NAME" value="task5.CorporationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CorporationTest.searchAllEmployeeByLastName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WorkingWithFiles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="task5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="task5" />
+      <option name="MAIN_CLASS_NAME" value="task5.CorporationTest" />
+      <option name="METHOD_NAME" value="searchAllEmployeeByLastName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CorporationTest.searchAllEmployeeByNameEqualFirstName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WorkingWithFiles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="task5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="task5" />
+      <option name="MAIN_CLASS_NAME" value="task5.CorporationTest" />
+      <option name="METHOD_NAME" value="searchAllEmployeeByNameEqualFirstName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CorporationTest.searchAllEmployeeByNameEqualPatronymicStartsWithAndAgeIs23" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WorkingWithFiles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="task5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="task5" />
+      <option name="MAIN_CLASS_NAME" value="task5.CorporationTest" />
+      <option name="METHOD_NAME" value="searchAllEmployeeByNameEqualPatronymicStartsWithAndAgeIs23" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CorporationTest.searchAllEmployeeByNameEqualPatronymicStartsWithAndAgeIs24" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WorkingWithFiles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="task5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="task5" />
+      <option name="MAIN_CLASS_NAME" value="task5.CorporationTest" />
+      <option name="METHOD_NAME" value="searchAllEmployeeByNameEqualPatronymicStartsWithAndAgeIs24" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CorporationTest" />
+        <item itemvalue="JUnit.CorporationTest.searchAllEmployeeByNameEqualPatronymicStartsWithAndAgeIs23" />
+        <item itemvalue="JUnit.CorporationTest.searchAllEmployeeByNameEqualPatronymicStartsWithAndAgeIs24" />
+        <item itemvalue="JUnit.CorporationTest.searchAllEmployeeByNameEqualFirstName" />
+        <item itemvalue="JUnit.CorporationTest.searchAllEmployeeByLastName" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -60,7 +172,11 @@
       <workItem from="1698852589588" duration="418000" />
       <workItem from="1698913300129" duration="12866000" />
       <workItem from="1698935587065" duration="5040000" />
-      <workItem from="1698942721740" duration="440000" />
+      <workItem from="1698942721740" duration="794000" />
+      <workItem from="1699026120375" duration="21000" />
+      <workItem from="1699095101429" duration="323000" />
+      <workItem from="1699102086664" duration="43000" />
+      <workItem from="1699179523112" duration="10432000" />
     </task>
     <task id="LOCAL-00001" summary="task 1 done">
       <option name="closed" value="true" />
@@ -102,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698941138081</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="task 5 mod Corporation">
+      <option name="closed" value="true" />
+      <created>1698943484252</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698943484252</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,17 +238,7 @@
     <MESSAGE value="task 2, 3 done" />
     <MESSAGE value="task 4 done" />
     <MESSAGE value="task 5 add" />
-    <option name="LAST_COMMIT_MESSAGE" value="task 5 add" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/task5/App.java</url>
-          <line>5</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="task 5 mod Corporation" />
+    <option name="LAST_COMMIT_MESSAGE" value="task 5 mod Corporation" />
   </component>
 </project>
